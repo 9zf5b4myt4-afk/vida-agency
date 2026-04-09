@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16 border-t border-white/5 pt-16">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="group inline-flex items-center gap-2 cursor-pointer mb-6">
-              <span className="text-white font-extrabold text-xl tracking-tighter">VIDA</span>
+              <span className="text-white font-extrabold text-xl tracking-tighter">VIDA SYSTEMS</span>
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] transition-all duration-500 group-hover:scale-[2] group-hover:bg-blue-400"></span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed">
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link href="#work" className="hover:text-blue-400 transition-colors">Work</Link></li>
               <li><Link href="#services" className="hover:text-blue-400 transition-colors">Services</Link></li>
-              <li><Link href="#agency" className="hover:text-blue-400 transition-colors">Agency</Link></li>
+              <li><Link href="#agency" className="hover:text-blue-400 transition-colors">Agency</Link></li> 
             </ul>
           </div>
 
@@ -78,7 +78,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-gray-600">
-          <p>© {currentYear} Vida Digital Agency. All rights reserved.</p>
+          <p>© {currentYear} Vida Systems. All rights reserved.</p>
           <p className="mt-4 md:mt-0 flex items-center gap-2 tracking-widest uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
             Systems Operational

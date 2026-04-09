@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const services = [
   {
     id: "01",
-    title: "Full-Stack Architecture",
-    description: "End-to-end web applications built for speed and scale using Next.js, React, and robust backend integrations.",
-    tech: ["Next.js", "TypeScript", "Node.js"],
+    title: "High-Performance Web Platforms",
+    description: "We engineer lightning-fast, SEO-optimized web architectures that establish instant authority and convert visitors into high-value clients.",
+    tech: ["Next.js", "Headless CMS", "Conversion UI"],
   },
   {
     id: "02",
-    title: "Cloud Infrastructure",
-    description: "Secure, sovereign, and scalable deployment architectures optimized for varying network conditions across the continent.",
-    tech: ["Vercel Edge", "DigitalOcean", "Linux"],
+    title: "E-Commerce & Digital Systems",
+    description: "Scalable online storefronts and digital systems designed to handle high transaction volumes seamlessly across Francophone Africa.",
+    tech: ["Custom Stores", "Payment Routing", "Automation"],
   },
   {
     id: "03",
-    title: "Premium UI/UX Engineering",
-    description: "Bespoke interface design with fluid animations, micro-interactions, and flawless mobile-first execution.",
-    tech: ["Tailwind v4", "Framer Motion", "WebGL"],
+    title: "Bespoke SaaS & Fintech",
+    description: "Complex, secure, cross-border applications engineered for scale. From custom dashboards to full-stack financial infrastructure.",
+    tech: ["Fintech APIs", "Cross-Border", "Bank-Grade Security"],
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Services() {
             Our <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-200">Capabilities.</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl">
-            We don't use templates. We engineer custom digital products from the ground up to solve complex business challenges.
+            We don't use templates. We engineer bespoke digital products from the ground up to solve complex business challenges.
           </p>
         </div>
       </div>

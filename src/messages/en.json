@@ -1,0 +1,64 @@
+{
+  "Navbar": {
+    "work": "Work",
+    "capabilities": "Capabilities",
+    "agency": "Agency",
+    "letsTalk": "Let's Talk"
+  },
+  "Hero": {
+    "deploying": "Deploying Globally",
+    "titlePrefix": "Engineering High-Performance",
+    "word1": "Digital Architecture.",
+    "word2": "Fintech Infrastructure.",
+    "word3": "Scalable Platforms.",
+    "word4": "Cross-Border Systems.",
+    "subtitle": "We build bespoke web platforms, scalable fintech infrastructure, and custom applications for ambitious businesses expanding across Senegal and Francophone Africa.",
+    "btnPrimary": "Initiate Project",
+    "btnSecondary": "View Our Work"
+  },
+  "Process": {
+    "titlePrefix": "Our",
+    "titleHighlight": "Methodology.",
+    "subtitle": "We don't just write code. We engineer complete digital systems designed to solve complex business challenges.",
+    "step1Title": "Architecture & Strategy",
+    "step1Desc": "We analyze your business infrastructure and design a scalable, secure technical blueprint before writing a single line of code.",
+    "step2Title": "Engineering & Build",
+    "step2Desc": "Using modern frameworks like Next.js and secure backends, we engineer bespoke platforms designed for speed, security, and scale.",
+    "step3Title": "Deployment & Scale",
+    "step3Desc": "We deploy on global edge networks, ensuring your application remains lightning-fast and highly available as your user base grows."
+  },
+  "Portfolio": {
+    "titlePrefix": "Selected",
+    "titleHighlight": "Works.",
+    "subtitle": "A showcase of high-performance applications and digital experiences engineered for scale.",
+    "syncing": "Syncing secure data..."
+  },
+  "Services": {
+    "titlePrefix": "Our",
+    "titleHighlight": "Capabilities.",
+    "subtitle": "We don't use templates. We engineer bespoke digital products from the ground up to solve complex business challenges.",
+    "srv1Title": "High-Performance Web Platforms",
+    "srv1Desc": "We engineer lightning-fast, SEO-optimized web architectures that establish instant authority and convert visitors into high-value clients.",
+    "srv2Title": "E-Commerce & Digital Systems",
+    "srv2Desc": "Scalable online storefronts and digital systems designed to handle high transaction volumes seamlessly across Francophone Africa.",
+    "srv3Title": "Bespoke SaaS & Fintech",
+    "srv3Desc": "Complex, secure, cross-border applications engineered for scale. From custom dashboards to full-stack financial infrastructure."
+  },
+  "Footer": {
+    "title1": "Let's Build",
+    "title2": "The Future.",
+    "subtitle": "Engineering high-performance digital architecture. Rooted in Dakar, deploying globally.",
+    "initiateProject": "Initiate Project",
+    "hq": "HQ: Dakar, Senegal",
+    "deploying": "Deploying Globally.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "legal": "Legal",
+    "systemsOperational": "Systems Operational",
+    "navWork": "Work",
+    "navServices": "Services",
+    "navAgency": "Agency",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

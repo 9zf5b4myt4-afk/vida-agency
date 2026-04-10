@@ -20,8 +20,38 @@ export async function submitProject(formData: FormData) {
     return { success: false, error: "Missing required fields." };
   }
 
+  // STEP 1: SAVE TO VIDA SYSTEMS DATABASE
   try {
-    const { data, error } = await resend.emails.send({
+    const dbUrl = process.env.NEXT_PUBLIC_SERVER_URL || "https://api.vidasystems.agency";
+    const dbResponse = await fetch(`${dbUrl}/api/leads`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phone: phone || "",
+        projectType,
+        budget: `${currency} ${budget}`, // e.g., "NGN 15M - 35M"
+        clientType,
+        businessStatus,
+        details,
+      }),
+    });
+
+    if (!dbResponse.ok) {
+      console.error("Payload CMS Error:", await dbResponse.text());
+      // We log the error, but we intentionally don't "return" here 
+      // so that if the DB is down, it still attempts to send you the email!
+    }
+  } catch (dbError) {
+    console.error("Database Connection Error:", dbError);
+  }
+
+  // STEP 2: SEND EMAIL NOTIFICATION
+  try {
+    const { error } = await resend.emails.send({
       from: "Vida Agency <onboarding@resend.dev>", 
       to: ["ukpabigodswill3@gmail.com"], 
       subject: `New Lead: ${projectType} from ${name}`,

@@ -2,21 +2,20 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import Process from "@/components/Process"; 
 import ProjectModal from "@/components/ProjectModal";
 
-const heroWords = [
-  "Digital Architecture.",
-  "Fintech Infrastructure.",
-  "Scalable Platforms.",
-  "Cross-Border Systems."
-];
-
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
+  
+  const t = useTranslations("Hero");
+
+  // Reconstruct our rotating words array using translations
+  const heroWords = [t("word1"), t("word2"), t("word3"), t("word4")];
 
   // Rotate the hero words every 3 seconds
   useEffect(() => {
@@ -24,7 +23,7 @@ export default function Home() {
       setWordIndex((prev) => (prev + 1) % heroWords.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [heroWords.length]);
 
   useEffect(() => {
     const handleOpenModal = () => setIsModalOpen(true);
@@ -39,22 +38,12 @@ export default function Home() {
       {/* --- DYNAMIC AURORA BACKGROUND --- */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <motion.div 
-          animate={{ 
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.25, 0.1],
-            x: [0, 50, 0],
-            y: [0, -50, 0]
-          }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.25, 0.1], x: [0, 50, 0], y: [0, -50, 0] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-600/20 blur-[120px] rounded-full mix-blend-screen"
         />
         <motion.div 
-          animate={{ 
-            scale: [1, 1.5, 1],
-            opacity: [0.05, 0.15, 0.05],
-            x: [0, -50, 0],
-            y: [0, 50, 0]
-          }}
+          animate={{ scale: [1, 1.5, 1], opacity: [0.05, 0.15, 0.05], x: [0, -50, 0], y: [0, 50, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 2 }}
           className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-indigo-600/10 blur-[150px] rounded-full mix-blend-screen"
         />
@@ -77,13 +66,12 @@ export default function Home() {
           >
             <span className="text-white font-bold tracking-widest">VIDA <span className="text-blue-500">SYSTEMS</span></span> 
             <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse shadow-[0_0_10px_rgba(59,130,246,1)]"></span>
-            <span>Deploying Globally</span>
+            <span>{t("deploying")}</span>
           </motion.div>
 
           {/* Main Headline with Animated Text */}
-   {/* Main Headline with Animated Text */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter mb-6 max-w-4xl leading-[1.1] text-white">
-            Engineering High-Performance <br className="hidden md:block" />
+            {t("titlePrefix")} <br className="hidden md:block" />
             <div className="h-[1.2em] relative overflow-hidden flex justify-center mt-2">
               <AnimatePresence mode="popLayout">
                 <motion.span
@@ -101,7 +89,7 @@ export default function Home() {
           </h1>
           
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed font-light">
-            We build bespoke web platforms, scalable fintech infrastructure, and custom applications for ambitious businesses expanding across Senegal and Francophone Africa.
+            {t("subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
@@ -111,7 +99,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-100 shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(255,255,255,0.4)] transition-all duration-300"
             >
-              Initiate Project
+              {t("btnPrimary")}
             </motion.button>
             <motion.a
               href="#work"
@@ -119,22 +107,16 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-transparent text-white border border-white/20 font-bold rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
             >
-              View Our Work
+              {t("btnSecondary")}
             </motion.a>
           </div>
         </motion.div>
       </section>
 
-      {/* NEW PROCESS SECTION */}
       <Process />
-
-      {/* PORTFOLIO SECTION */}
       <Portfolio />
-
-      {/* SERVICES SECTION */}
       <Services />
       
-      {/* GLOBAL MODAL */}
       <ProjectModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );

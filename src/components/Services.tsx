@@ -1,38 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const services = [
-  {
-    id: "01",
-    title: "High-Performance Web Platforms",
-    description: "We engineer lightning-fast, SEO-optimized web architectures that establish instant authority and convert visitors into high-value clients.",
-    tech: ["Next.js", "Headless CMS", "Conversion UI"],
-  },
-  {
-    id: "02",
-    title: "E-Commerce & Digital Systems",
-    description: "Scalable online storefronts and digital systems designed to handle high transaction volumes seamlessly across Francophone Africa.",
-    tech: ["Custom Stores", "Payment Routing", "Automation"],
-  },
-  {
-    id: "03",
-    title: "Bespoke SaaS & Fintech",
-    description: "Complex, secure, cross-border applications engineered for scale. From custom dashboards to full-stack financial infrastructure.",
-    tech: ["Fintech APIs", "Cross-Border", "Bank-Grade Security"],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Services() {
+  const t = useTranslations("Services");
+
+  const services = [
+    {
+      id: "01",
+      title: t("srv1Title"),
+      description: t("srv1Desc"),
+      tech: ["Next.js", "Headless CMS", "Conversion UI"],
+    },
+    {
+      id: "02",
+      title: t("srv2Title"),
+      description: t("srv2Desc"),
+      tech: ["Custom Stores", "Payment Routing", "Automation"],
+    },
+    {
+      id: "03",
+      title: t("srv3Title"),
+      description: t("srv3Desc"),
+      tech: ["Fintech APIs", "Cross-Border", "Bank-Grade Security"],
+    },
+  ];
+
   return (
     <section id="services" className="w-full max-w-7xl mx-auto px-6 py-24 relative z-10 border-t border-white/5">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
         <div>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
-            Our <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-200">Capabilities.</span>
+            {t("titlePrefix")} <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-200">{t("titleHighlight")}</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl">
-            We don't use templates. We engineer bespoke digital products from the ground up to solve complex business challenges.
+            {t("subtitle")}
           </p>
         </div>
       </div>

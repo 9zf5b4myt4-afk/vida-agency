@@ -10,7 +10,16 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'api.vidasystems.agency',
+        port: '',
+        pathname: '/**',
       },
+      // Added so images also load when you are testing locally
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };

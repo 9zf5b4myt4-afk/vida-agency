@@ -8,46 +8,54 @@
   "Hero": {
     "deploying": "From Dakar to Global Markets",
     "titlePrefix": "We Build Digital Systems That",
-    "word1": "Attract Clients.",
-    "word2": "Automate Your Business.",
-    "word3": "Scale Your Revenue.",
-    "word4": "Expand Across Borders.",
-    "subtitle": "Your trusted partner for digital transformation. Vida Systems works alongside individuals and businesses to design and build high-performing websites, digital applications, and software that attract clients, automate operations, and scale across Senegal and Francophone Africa.",
+    "word1": "Bring You Clients.",
+    "word2": "Automate Your Operations.",
+    "word3": "Increase Your Revenue.",
+    "word4": "Scale Across Borders.",
+    "subtitle": "Vida Systems partners with ambitious businesses to design and build high-performing digital platforms that attract clients, streamline operations, and drive growth across Senegal and Francophone Africa.",
     "btnPrimary": "Let’s Build Together",
     "btnSecondary": "View Our Work"
   },
   "Process": {
     "titlePrefix": "Our",
     "titleHighlight": "Methodology.",
-    "subtitle": "We don’t just build websites. We create complete systems that solve real business problems and support growth.",
+    "subtitle": "We don’t just build websites. We create complete systems designed to simplify operations, support growth, and deliver real business results.",
     "step1Title": "Architecture & Strategy",
-    "step1Desc": "We analyze your business and design a clear, scalable plan before building anything.",
+    "step1Desc": "We break down your business model and turn it into a clear, scalable plan so every decision made during development serves a purpose.",
     "step2Title": "Engineering & Build",
-    "step2Desc": "We develop fast, secure, and reliable platforms tailored to your business needs.",
+    "step2Desc": "We transform your ideas into powerful digital systems that run fast, operate reliably, and support your business without constant technical stress.",
     "step3Title": "Deployment & Scale",
-    "step3Desc": "We launch and optimize your system so it performs smoothly as your business grows."
+    "step3Desc": "We launch, secure, and optimize your system to perform under pressure, handle growth, and keep your business running smoothly as demand increases."
   },
   "Portfolio": {
     "titlePrefix": "Selected",
     "titleHighlight": "Works.",
-    "subtitle": "A showcase of digital platforms built to perform, scale, and deliver results.",
+    "subtitle": "A selection of digital platforms built to perform, scale, and deliver measurable results.",
     "syncing": "Syncing secure data..."
+  },
+  "Testimonials": {
+    "titlePrefix": "Client",
+    "titleHighlight": "Impact.",
+    "subtitle": "Real feedback from businesses using the systems we’ve built to grow and operate more efficiently.",
+    "syncing": "Loading client data..."
   },
   "Services": {
     "titlePrefix": "Our",
     "titleHighlight": "Capabilities.",
-    "subtitle": "We don’t use templates. Every system we build is designed to solve real business problems and drive results.",
-    "srv1Title": "Websites That Convert Visitors Into Clients",
-    "srv1Desc": "We build fast, SEO-optimized websites designed to earn trust instantly and turn your traffic into paying customers.",
-    "srv2Title": "E-Commerce & Automated Business Systems",
-    "srv2Desc": "We create online stores and systems that handle payments, orders, and operations so your business runs smoothly without constant manual work.",
-    "srv3Title": "Custom Platforms & Fintech Solutions",
-    "srv3Desc": "From dashboards to financial systems, we build secure platforms that support growth, transactions, and cross-border operations."
+    "subtitle": "Every system we build is tailored to solve real business challenges, improve efficiency, and drive growth.",
+    "srv1Title": "Websites That Turn Visitors Into Clients",
+    "srv1Desc": "We build fast, high-converting websites designed to establish trust instantly and guide visitors toward becoming paying customers.",
+    "srv2Title": "Mobile & Web Applications",
+    "srv2Desc": "We design and develop custom mobile and web applications that bring your ideas to life, streamline operations, and create new digital revenue opportunities.",
+    "srv3Title": "E-Commerce & Automated Business Systems",
+    "srv3Desc": "We create systems that handle your sales, payments, and operations automatically so your business runs efficiently without constant manual input.",
+    "srv4Title": "Custom Platforms & Fintech Solutions",
+    "srv4Desc": "We develop secure, scalable platforms tailored to your business model, from dashboards to complex financial systems built for growth."
   },
   "Footer": {
     "title1": "Let's Build",
     "title2": "The Future.",
-    "subtitle": "We build digital systems that help businesses grow, scale, and operate globally.",
+    "subtitle": "We design and build digital systems that help businesses grow, scale, and operate across borders.",
     "initiateProject": "Let’s Build Together",
     "hq": "HQ: Dakar, Senegal",
     "deploying": "From Dakar to Global Markets.",
